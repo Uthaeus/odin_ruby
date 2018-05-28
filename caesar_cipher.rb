@@ -30,14 +30,42 @@ def cipher str, num
 
   end
 
-  p text
+  return text
 end
 
-t1 = 'this is a test'
-t2 = 'This is Another Test Here'
-t3 = 'Does this ignore 345 numbers?'
+# t1 = 'this is a test'
+# t2 = 'This is Another Test Here'
+# t3 = 'Does this ignore 345 numbers?'
 
 
-cipher(t1, 3)
-cipher(t2, 7)
-cipher(t3, 4)
+# cipher(t1, 3)
+# cipher(t2, 7)
+# cipher(t3, 4)
+
+
+puts "Welcome to the Caesar Cipher"
+puts
+sleep 0.5
+puts "Enter your message:"
+message = gets.chomp
+puts
+puts "Enter a number to offset your code:"
+offset = gets.chomp.to_i
+
+result = cipher(message, offset)
+
+puts
+puts result
+
+
+
+
+
+
+
+
+
+
+
+
+
